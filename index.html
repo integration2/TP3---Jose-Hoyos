@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr-CA">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Commander une brochure gratuite</title>
+    </head>
+    <body>
+        <form action="index.html" method="get">
+            <fieldset id="format-brochure">
+                <legend id="format_brochure__titre">Format de la brochure</legend>
+                <input type="radio" name="format-brochure__type" id="format-brochure__imprime">
+                <input type="radio" name="format-brochure__type" id="format-brochure__pdf">
+                <input type="radio" name="format-brochure__type" id="format-brochure__epub">
+            </fieldset>
+
+            <fieldset id="informations-contact">
+                <legend id="information-contact__titre">Information de contact</legend>
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="information-contact__prenom">
+                
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="information-contact__nom">
+                
+                <label for="courriel">Courriel (exemple@domaine.com)</label>
+                <input type="email" name="courriel" id="information-contact__courriel">
+
+                <label for="telephone">Téléphone (514 555 0123)</label>
+                <input type="tel" name="telephone" id="information-contact__telephone">
+            </fieldset>
+
+            <fieldset id="informations-postales">
+                <legend id="informations-postales">Informations Postales</legend>
+                <label for="adresse">Adresse (123, rue Principale)</label>
+                <input type="text" name="adresse" id="informations-postales__adresse">
+
+                <label for="pays">Pays</label>
+                <select name="pays" id="informations-postales__pays">
+                    <option value="">- Sélectionner -</option>
+                    <option value="1">Canada</option>
+                    <option value="2">USA</option>
+                </select>
+
+                <label for="province-etat">Province ou État</label>
+                <select name="province-etat" id="informations-postales__province-etat">
+                    <option value="">- Sélectionner -</option>
+                </select>
+
+                <label for="code-postal">Code postal (A1A 1A1)</label>
+                <input type="text" name="code-postal" id="informations-postales__code-postal" max="6">
+            </fieldset>
+
+            <filedset id="infolettre">
+                <label for="infolettre-checkbox">Je désire recevoir des informations mensuelles par courriel sur les nouvelles publications et ressources disponibles</label>
+                <input type="checkbox" name="infolettre" id="infolettre-checkbox">
+            </filedset>
+
+            <button name="btnCommander" value="Commander" type="submit" formnovalidate>
+                Commander
+            </button>
+        </form>
+    </body>
+</html>
