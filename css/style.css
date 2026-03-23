@@ -105,3 +105,49 @@ img {
 .format-brochure__label {
     display: block;
 }
+
+.image__format-brochure {
+    display: inline-block;
+    width: 30px;
+    padding:5px;
+    background-color: #C8501A;
+    border-radius: 5px;
+}
+
+body {
+    background-color: #F8F5F0;
+}
+
+.formulaire {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 75px 50px 75px;
+    margin: 50px;
+}
+
+.section-brochure__titre {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #3B3B5B;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+.section-brochure__titre>p {
+    position: absolute;
+    top: -10px;
+    width: 100vh;
+    left: 50px;
+}
+
+.separateur {
+    border-bottom: 2px solid lightgrey;
+
+}
+
+.section-formulaire {
+    border: none;
+}
