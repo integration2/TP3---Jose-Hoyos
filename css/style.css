@@ -101,3 +101,7 @@ img {
 .icone--erreur {
     background-position: 99px 0;
 }
+
+.format-brochure__label {
+    display: block;
+}

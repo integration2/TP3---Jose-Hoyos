@@ -3,35 +3,51 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/normalize.css">
         <title>Commander une brochure gratuite</title>
     </head>
     <body>
         <form action="index.html" method="get">
             <fieldset id="format-brochure">
                 <legend id="format_brochure__titre">Format de la brochure</legend>
-                <input type="radio" name="format-brochure__type" id="format-brochure__imprime">
-                <input type="radio" name="format-brochure__type" id="format-brochure__pdf">
-                <input type="radio" name="format-brochure__type" id="format-brochure__epub">
+                <ul>
+                    <li>
+                        <input type="radio" name="format-brochure__type" id="format-brochure__imprime" value="imprime" class="screen-reader-only">
+                        <label for="format-brochure__imprime" class="format-brochure__label">Imprimé</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="format-brochure__type" id="format-brochure__pdf" value="pdf" class="screen-reader-only">
+                        <label for="format-brochure__pdf" class="format-brochure__label">PDF</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="format-brochure__type" id="format-brochure__epub" value="epub" class="screen-reader-only">
+                        <label for="format-brochure__epub" class="format-brochure__label">ePub</label>
+                    </li>
+                </ul>
+                
             </fieldset>
 
             <fieldset id="informations-contact">
                 <legend id="information-contact__titre">Information de contact</legend>
+
                 <label for="prenom">Prénom</label>
                 <input type="text" name="prenom" id="information-contact__prenom">
                 
                 <label for="nom">Nom</label>
                 <input type="text" name="nom" id="information-contact__nom">
                 
-                <label for="courriel">Courriel (exemple@domaine.com)</label>
+                <label for="courriel">Courriel <span>(exemple@domaine.com)</span></label>
                 <input type="email" name="courriel" id="information-contact__courriel">
 
-                <label for="telephone">Téléphone (514 555 0123)</label>
+                <label for="telephone">Téléphone <span>(514 555 0123)</span></label>
                 <input type="tel" name="telephone" id="information-contact__telephone">
             </fieldset>
 
             <fieldset id="informations-postales">
                 <legend id="informations-postales">Informations Postales</legend>
-                <label for="adresse">Adresse (123, rue Principale)</label>
+
+                <label for="adresse">Adresse <span>(123, rue Principale)</span></label>
                 <input type="text" name="adresse" id="informations-postales__adresse">
 
                 <label for="pays">Pays</label>
@@ -55,7 +71,7 @@
                 <input type="checkbox" name="infolettre" id="infolettre-checkbox">
             </filedset>
 
-            <button name="btnCommander" value="Commander" type="submit" formnovalidate>
+            <button name="btnCommander" value="Commander". formnovalidate>
                 Commander
             </button>
         </form>
