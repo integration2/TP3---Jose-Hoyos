@@ -101,7 +101,10 @@ img {
 .icone--erreur {
     background-position: 99px 0;
 }
-
+body {
+    background-color:var(--couleur-primaire);
+}
+/* Titres */
 .image__titre {
     display: inline-block;
     width: 30px;
@@ -110,15 +113,14 @@ img {
     border-radius: 5px;
 }
 
-body {
-    background-color:var(--couleur-primaire);
-}
-
 .formulaire {
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px 30px 30px 30px;
+    margin: 30px;
+    border-radius: 20px;
 }
 
 .section-brochure__titre{
@@ -147,11 +149,9 @@ body {
     width: 100%;
 }
 
-.section-contact {
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-}
+
+
+/* Section 1 */
 
 .format-brochure__liste {
     display: flex;
@@ -168,7 +168,7 @@ body {
     letter-spacing: 1.5px;
     align-self: center;
     border: 2px solid lightgrey;
-    padding: 25px 250px 25px 250px;
+    padding: 50px 250px 50px 250px;
     border-radius: 10px;
     margin: 10px 0 10px 0;
     width: 100%;
@@ -176,14 +176,23 @@ body {
     text-align: center;
 }
 
-.format-brochure__liste-element option:checked {
-    border: 2px solid var(--couleur-tertiaire);
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid var(--couleur-tertiaire);
+}
+
+input[type=radio]:checked + .format-brochure__label {
+    outline: 2px solid var(--couleur-tertiaire);
+}
+
+input[type=radio]:focus + .format-brochure__label {
+    outline: 2px solid var(--couleur-tertiaire);
 }
 
 .format-brochure__label {
     display: block;
     text-align: center;
     width:75px;
+    margin: 0 auto;
 }
 
 .image__format-brochure {
@@ -192,4 +201,28 @@ body {
     margin-bottom: 10px;
 }
 
+/* Section 2 */
 
+.section-contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--couleur-secondaire);
+    font-weight: bold;
+}
+
+.section-contact>label {
+    padding: 10px 0 10px 0;
+}
+
+.information-contact__champ-texte {
+    height: 3rem;
+    border-radius: 5px;
+    border: 2px solid lightgrey;
+}
+label>span {
+    opacity: 0.5;
+    font-weight: normal;
+}

@@ -14,7 +14,7 @@
     <main>
     <body>
         <form action="index.html" method="get" class="formulaire">
-            
+
             <fieldset id="format-brochure" class="section-formulaire">
             <div class="separateur"></div>
     
@@ -25,8 +25,8 @@
                 <ul class="format-brochure__liste">
                     <li class="format-brochure__liste-element">
                         <input type="radio" name="format-brochure__type" id="format-brochure__imprime" value="imprime" class="screen-reader-only">
-                        <label for="format-brochure__imprime" class="format-brochure__label">
-                            <img class="image__format-brochure" src="images/icon-file-print.svg">Imprimé</label>
+                        <img class="image__format-brochure" src="images/icon-file-print.svg">
+                        <label for="format-brochure__imprime" class="format-brochure__label">Imprimé</label>
                     </li>
                     <li class="format-brochure__liste-element">
                         <input type="radio" name="format-brochure__type" id="format-brochure__pdf" value="pdf" class="screen-reader-only">
@@ -50,16 +50,16 @@
                 <div class="separateur"></div>
                 <div class="section-contact">
                     <label for="prenom">Prénom</label>
-                    <input type="text" name="prenom" id="information-contact__prenom">
+                    <input type="text" name="prenom" id="information-contact__prenom" class="information-contact__champ-texte">
                     
                     <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="information-contact__nom">
+                    <input type="text" name="nom" id="information-contact__nom" class="information-contact__champ-texte">
                     
                     <label for="courriel">Courriel <span class="exemple">(exemple@domaine.com)</span></label>
-                    <input type="email" name="courriel" id="information-contact__courriel">
+                    <input type="email" name="courriel" id="information-contact__courriel" class="information-contact__champ-texte">
 
                     <label for="telephone">Téléphone <span class="exemple">(514 555 0123)</span></label>
-                    <input type="tel" name="telephone" id="information-contact__telephone">
+                    <input type="tel" name="telephone" id="information-contact__telephone" class="information-contact__champ-texte">
                 </div>
             </fieldset>
 
