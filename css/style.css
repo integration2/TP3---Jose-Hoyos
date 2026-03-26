@@ -148,7 +148,12 @@ body {
     border: none;
 }
 
-
+.section-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 600px;
+}
 
 .format-brochure__liste {
     display: flex;
