@@ -18,29 +18,35 @@
             <div class="separateur"></div>
     
                 <legend id="format-brochure__titre" class="section-brochure__titre">
-                    <img class="image__format-brochure" src="images/icon-format-brochure.svg">
+                    <img class="image__titre" src="images/icon-format-brochure.svg">
                     <p>Format de la brochure</p>
                 </legend>
-                <ul>
-                    <li>
+                <ul class="format-brochure__liste">
+                    <li class="format-brochure__liste-element">
                         <input type="radio" name="format-brochure__type" id="format-brochure__imprime" value="imprime" class="screen-reader-only">
-                        <label for="format-brochure__imprime" class="format-brochure__label">Imprimé</label>
+                        <label for="format-brochure__imprime" class="format-brochure__label">
+                            <img class="image__format-brochure" src="images/icon-file-print.svg">Imprimé</label>
                     </li>
-                    <li>
+                    <li class="format-brochure__liste-element">
                         <input type="radio" name="format-brochure__type" id="format-brochure__pdf" value="pdf" class="screen-reader-only">
+                        <img class="image__format-brochure" src="images/icon-file-pdf.svg">
                         <label for="format-brochure__pdf" class="format-brochure__label">PDF</label>
                     </li>
-                    <li>
+                    <li class="format-brochure__liste-element">
                         <input type="radio" name="format-brochure__type" id="format-brochure__epub" value="epub" class="screen-reader-only">
+                        <img class="image__format-brochure" src="images/icon-file-epub.svg">
                         <label for="format-brochure__epub" class="format-brochure__label">ePub</label>
                     </li>
                 </ul>
                 
             </fieldset>
 
-            <fieldset id="informations-contact">
-                <legend id="information-contact__titre" class="section-brochure__titre">Information de contact</legend>
-
+            <fieldset id="informations-contact" class="section-formulaire">
+                <legend id="information-contact__titre" class="section-brochure__titre">
+                    <img class="image__titre" src="images/icon-contact.svg">
+                    <p>Information de contact</p>
+                </legend>
+                <div class="separateur"></div>
                 <label for="prenom">Prénom</label>
                 <input type="text" name="prenom" id="information-contact__prenom">
                 
@@ -54,9 +60,12 @@
                 <input type="tel" name="telephone" id="information-contact__telephone">
             </fieldset>
 
-            <fieldset id="informations-postales">
-                <legend id="informations-postales" class="section-brochure__titre">Informations Postales</legend>
-
+            <fieldset id="informations-postales" class="section-formulaire">
+                <legend id="informations-postales" class="section-brochure__titre">
+                    <p>Informations Postales</p>
+                    <img class="image__titre" src="images/icon-postal.svg">
+                </legend>
+                <div class="separateur"></div>
                 <label for="adresse">Adresse <span class="exemple">(123, rue Principale)</span></label>
                 <input type="text" name="adresse" id="informations-postales__adresse">
 

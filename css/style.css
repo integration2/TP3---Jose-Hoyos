@@ -26,9 +26,9 @@
 /* ------- Variables ------- */
 :root {
     /* Couleurs */
-    --couleur-primaire: ?;
-    --couleur-secondaire: ?;
-    --couleur-tertiaire: ?;
+    --couleur-primaire: #F8F5F0;
+    --couleur-secondaire: #3B3B5B;
+    --couleur-tertiaire: #C8501A;
 }
 
 /* ------- Styles de base ------- */
@@ -102,36 +102,32 @@ img {
     background-position: 99px 0;
 }
 
-.format-brochure__label {
-    display: block;
-}
-
-.image__format-brochure {
+.image__titre {
     display: inline-block;
     width: 30px;
     padding:5px;
-    background-color: #C8501A;
+    background-color: var(--couleur-tertiaire);
     border-radius: 5px;
 }
 
 body {
-    background-color: #F8F5F0;
+    background-color:var(--couleur-primaire);
 }
 
 .formulaire {
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 50px 75px 50px 75px;
     margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.section-brochure__titre {
+.section-brochure__titre{
     font-family: 'DM Sans', sans-serif;
     font-weight: bolder;
     text-transform: uppercase;
-    color: #3B3B5B;
+    color: var(--couleur-secondaire);
     letter-spacing: 1.5px;
     position: relative;
 }
@@ -145,9 +141,49 @@ body {
 
 .separateur {
     border-bottom: 2px solid lightgrey;
-
+    
 }
 
 .section-formulaire {
     border: none;
 }
+
+
+
+.format-brochure__liste {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-left: 0;
+}
+
+.format-brochure__liste-element {
+    list-style: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    align-self: center;
+    border: 2px solid lightgrey;
+    padding: 25px 250px 25px 250px;
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+}
+
+.format-brochure__liste-element option:checked {
+    border: 2px solid var(--couleur-tertiaire);
+}
+
+.format-brochure__label {
+    display: block;
+    text-align: center;
+    width:75px;
+}
+
+.image__format-brochure {
+    margin: 0 auto;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+
