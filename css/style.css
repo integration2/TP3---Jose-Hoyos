@@ -116,8 +116,6 @@ body {
 
 .formulaire {
     background-color: white;
-    padding: 50px 75px 50px 75px;
-    margin: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,12 +144,12 @@ body {
 
 .section-formulaire {
     border: none;
+    width: 100%;
 }
 
 .section-contact {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     width: 600px;
 }
 
@@ -173,6 +171,9 @@ body {
     padding: 25px 250px 25px 250px;
     border-radius: 10px;
     margin: 10px 0 10px 0;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
 }
 
 .format-brochure__liste-element option:checked {
