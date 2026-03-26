@@ -147,6 +147,7 @@ body {
 .section-formulaire {
     border: none;
     width: 100%;
+    padding-bottom: 50px;
 }
 
 
@@ -214,7 +215,7 @@ input[type=radio]:focus + .format-brochure__label {
 }
 
 .section-contact>label {
-    padding: 10px 0 10px 0;
+    padding: 30px 0 10px 0;
 }
 
 .information-contact__champ-texte {
@@ -222,7 +223,29 @@ input[type=radio]:focus + .format-brochure__label {
     border-radius: 5px;
     border: 2px solid lightgrey;
 }
+
 label>span {
     opacity: 0.5;
     font-weight: normal;
+}
+
+/* Section 3 */
+
+.section-postale {
+     display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--couleur-secondaire);
+    font-weight: bold;
+}
+.information-postale__champ-texte {
+    height: 3rem;
+    border-radius: 5px;
+    border: 2px solid lightgrey;
+}
+
+.section-postale>label {
+    padding: 30px 0 10px 0;
 }

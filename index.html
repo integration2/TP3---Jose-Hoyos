@@ -71,29 +71,30 @@
                 </legend>
 
                 <div class="separateur"></div>
+                <div class="section-postale">
+                    <label for="adresse">Adresse <span class="exemple">(123, rue Principale)</span></label>
+                    <input type="text" name="adresse" id="informations-postales__adresse" class="information-postale__champ-texte">
 
-                <label for="adresse">Adresse <span class="exemple">(123, rue Principale)</span></label>
-                <input type="text" name="adresse" id="informations-postales__adresse">
+                    <label for="pays">Pays</label>
+                    <select name="pays" id="informations-postales__pays" class="information-postale__champ-texte">
+                        <option value="">- Sélectionner -</option>
+                        <option value="1">Canada</option>
+                        <option value="2">USA</option>
+                    </select>
 
-                <label for="pays">Pays</label>
-                <select name="pays" id="informations-postales__pays">
-                    <option value="">- Sélectionner -</option>
-                    <option value="1">Canada</option>
-                    <option value="2">USA</option>
-                </select>
+                    <label for="province-etat">Province ou État</label>
+                    <select name="province-etat" id="informations-postales__province-etat" class="information-postale__champ-texte">
+                        <option value="">- Sélectionner -</option>
+                    </select>
 
-                <label for="province-etat">Province ou État</label>
-                <select name="province-etat" id="informations-postales__province-etat">
-                    <option value="">- Sélectionner -</option>
-                </select>
-
-                <label for="code-postal">Code postal <span class="exemple">(A1A 1A1)</span></label>
-                <input type="text" name="code-postal" id="informations-postales__code-postal" max="6">
+                    <label for="code-postal">Code postal <span class="exemple">(A1A 1A1)</span></label>
+                    <input type="text" name="code-postal" id="informations-postales__code-postal" max="6" class="information-postale__champ-texte">
+                </div>
             </fieldset>
 
-            <filedset id="infolettre">
-                <input type="checkbox" name="infolettre" id="infolettre-checkbox">
-                <label for="infolettre-checkbox">Je désire recevoir des informations mensuelles par courriel sur les nouvelles publications et ressources disponibles</label>
+            <filedset id="infolettre" class="infolettre">
+                <input type="checkbox" name="infolettre" id="infolettre-checkbox" class="infolettre__checkbox">
+                <label for="infolettre-checkbox" class="infolettre__label">Je désire recevoir des informations mensuelles par courriel sur les nouvelles publications et ressources disponibles</label>
             </filedset>
 
             <button name="btnCommander" value="Commander". formnovalidate>
