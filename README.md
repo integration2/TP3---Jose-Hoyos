@@ -100,4 +100,4 @@ J'ai eu de la difficulté avec la fin de ce projet, j'ai oublié d'enregistrer m
 
 ## Ma note d'autoévaluation pour le projet entier : C
 
-capture d'écran : (images/screencapture-integration2-github-io-tp1-JosemHoyos-2026-04-02-07_27_14.png)
+capture d'écran : [capture-d'ecran](images/screencapture-integration2-github-io-tp1-JosemHoyos-2026-04-02-07_27_14.png)
