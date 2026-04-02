@@ -177,10 +177,6 @@ body {
     text-align: center;
 }
 
-input:focus, textarea:focus, select:focus {
-    outline: 2px solid var(--couleur-tertiaire);
-}
-
 input[type=radio]:checked + .format-brochure__label {
     outline: 2px solid var(--couleur-tertiaire);
 }
@@ -253,18 +249,19 @@ label>span {
 /* Section 4 */
 
 .infolettre {
-    justify-content: space-between;
+    justify-content: center;
     background-color: #F4F1EC;
     padding: 40px;
     width: 100%;
     border-radius: 10px;
     display: flex;
-    gap: 20px;
     align-items: flex-start;
+    gap: 20px;
 }
 
 .infolettre__checkbox {
     justify-self: flex-start;
+    align-self: flex-start;
     position: relative;
     color:#F4F1EC;
 }
@@ -273,4 +270,5 @@ label>span {
     font-family: 'DM Sans', sans-serif;
     color: var(--couleur-secondaire);
     font-weight: bold;
+    align-self: flex-start;
 }
